@@ -1,68 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/img/favicon/ShoppeLogo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Shoppe Việt Nam</title>
-  </head>
-  <body>
-        <div class="main">
-            <header id="header">
-              <div class="grid">
 
-                <nav class="nav">
-                      <ul class="nav__list">
-                          <li class="nav__list-item nav__list-item--separate">Kênh Người Bán</li>
-                          <li class="nav__list-item nav__list-item--separate">Tải ứng dụng</li>
-                          <li class="nav__list-item ">
-                            Kết nối 
-                            <a href="" class="nav-icon-link">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="" class="nav-icon-link">
-                              <i class="fa-brands fa-instagram"></i>
-  
-                            </a>
-                          </li>
-                      </ul>
-  
-                      <ul class="nav__list">
-                          <li class="nav__list-item">
-                              <a href="" class ="nav__list-item-link">
-                                <i class="fa-solid fa-bell"></i>
-                                Thông Báo
-                              </a>
-                          </li>
-                          <li class="nav__list-item">
-                              <a href="" class ="nav__list-item-link">
-                                <i class="fa-solid fa-circle-question"></i>
-                                Trợ Giúp
-                              </a>
-                          </li>
-                          <li class="nav__list-item nav__list-item--bold nav__list-item--separate">Đăng Ký</li>
-                          <li class="nav__list-item nav__list-item--bold ">Đăng Nhập</li>
-                      </ul>
-                </nav>
-              </div>
-            </header>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./assets/img/favicon/ShoppeLogo.png" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+	<link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="./assets/css/base.css" />
+	<link rel="stylesheet" href="./assets/css/main.css" />
+	<title>Shoppe Việt Nam</title>
+</head>
 
+<body>
+	<div class="main">
+		<header id="header">
+			<div class="grid">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__list-item nav__list-item--separate">
+							Kênh Người Bán
+						</li>
+						<li class="nav__list-item nav__list-item--separate nav__open-qr">
+							Tải ứng dụng
+							<div class="qr-code-download">
+								<img src="./assets/img/QR/QR.png" alt="QR Code" class="qr-img" />
+								<div class="app-download">
+									<a href="https://apps.apple.com/vn/app/id959841449" class="qr-download-link">
+										<img src="./assets/img/QR/appstore.png" alt="App Store"
+											class="qr-app-download-img" />
+									</a>
 
-            <div class="container">
+									<a href="https://play.google.com/store/apps/details?id=com.shopee.vn&hl=vi&gl=US"
+										class="qr-download-link">
+										<img src="./assets/img/QR/googleplay.png" alt="Google store"
+											class="qr-app-download-img" />
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav__list-item">
+							<span class="nav__title-no-pointer"> Kết nối</span>
+							<a href="" class="nav-icon-link">
+								<i class="nav__icon fa-brands fa-facebook"></i>
+							</a>
+							<a href="" class="nav-icon-link">
+								<i class="nav__icon fa-brands fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
 
-            </div>
+					<ul class="nav__list">
+						<li class="nav__list-item nav__list-item-open-notify ">
+							<a href="" class="nav__list-item-link">
+								<i class="fa-solid fa-bell"></i>
+								Thông Báo
+							</a>
+							<div class="header__notification">
+								<header class="notify_header">
+									<h3>Thông báo mới nhận</h3>
+								</header>
+								<ul class="notify-list">
+									<li class="notify-item">
+										<a href="" class="notify-link notify-item-viewed">
+											<img src="./assets/img/notification/img1.jfif" alt="" class="notify-img" />
+											<div class="notify-info">
+												<span class="notify-name">
+													Vourcher của bạn sắp hết hạn
+												</span>
+												<span class="notify-description">
+													Nguyễn Đức Dũng ơi ! Vourcher giảm giá và 2 vourcher nữa sẽ hết hạn
+													vào ngày 25/6..! Xài ngay khỏi tiếc nhé !
+												</span>
+												<div class="notify-description-img">
+													<img src="./assets/img/notification/img2.png" alt="Mã giảm giá"
+														class="notify-description-img-link">
+												</div>
 
-            <footer class="footer">
+											</div>
+										</a>
+									</li>
+									<li class="notify-item">
+										<a href="" class="notify-link">
+											<img src="./assets/img/notification/img3.jfif" alt="" class="notify-img" />
+											<div class="notify-info">
+												<span class="notify-name">
+													Đồng giá đến 99k - Mua cả thế giới
+												</span>
+												<span class="notify-description">
+													Hàng quốc tế, siêu đậm hôm nay. Vourcher 100k, bung
+													xả giày dép,túi kính,công nghệ Deal chỉ dưới 99k. Rần
+													rần gom ngay.
+												</span>
+											</div>
+										</a>
+									</li>
 
+									<li class="notify-item">
+										<a href="" class="notify-link notify-item-viewed">
+											<img src="./assets/img/notification/img4.jfif" alt="" class="notify-img" />
+											<div class="notify-info">
+												<span class="notify-name">
+													Cuối tuần thèm gì để Shoppe mời ?
+												</span>
+												<span class="notify-description">
+													Vourcher đặt món từ ShoppeFood. Đã được Shoppe đặt
+													vào ví của bạn, món Trung, món Thái, đồ Âu, ăn vặt. Muốn
+													ăn gì?...,lên đơn giao ngay!
+												</span>
+											</div>
+										</a>
+									</li>
+									<li class="notify-item  notify-item-viewed">
+										<a href="" class="notify-link">
+											<img src="./assets/img/notification/img5.jfif" alt="" class="notify-img" />
+											<div class="notify-info">
+												<span class="notify-name">Hết hồn chưa ? Nửa đêm sale đậm !
+												</span>
+												<span class="notify-description">
 
-            </footer>
+													Macbook, chống nắng, balo giảm đến 50%. Thanh toán hóa đơn, giảm đến
+													15k nạp điện thoại mệnh giá 50k chỉ với 1k. Deal chớp nhoáng ..Săn
+													ngay!
+												</span>
+											</div>
+										</a>
+									</li>
 
-        </div>
-  </body>
+									<li class="notify-item ">
+										<a href="" class="notify-link">
+											<img src="./assets/img/notification/img6.jfif" alt="" class="notify-img" />
+											<div class="notify-info">
+												<span class="notify-name">Kho quà 100tr - Chỉ còn hôm nay
+												</span>
+												<span class="notify-description">
+													Giật giải và thưởng nóng từ kho xu và vourcher 100tr trước 23h59
+													ngày 20/6 hôm nay! Tham gia ngay mini game cùng Shoppe nào! Chương
+													trình chỉ áp dụng cho người dùng chưa là Shoppe KOL/KOC
+												</span>
+
+											</div>
+										</a>
+									</li>
+								</ul>
+								<div class="footer-notify">
+									<a href="" class="footer-notify-btn">Xem tất cả</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav__list-item">
+							<a href="" class="nav__list-item-link">
+								<i class="fa-solid fa-circle-question"></i>
+								Trợ Giúp
+							</a>
+						</li>
+						<li class="nav__list-item nav__list-item--bold nav__list-item--separate">
+							Đăng Ký
+						</li>
+						<li class="nav__list-item nav__list-item--bold">Đăng Nhập</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="container">
+
+		</div>
+
+		<footer class="footer">
+
+		</footer>
+	</div>
+</body>
+
 </html>
