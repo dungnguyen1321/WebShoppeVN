@@ -11,7 +11,7 @@
 #header .nav__list {
   list-style: none;
   margin: 7px 0 0 0;
-  height: var(--);
+  
 }
 .nav__list-item,
 .nav__list-item-link {
@@ -343,13 +343,17 @@
 /* Phần ô seach */
 
 .header-with-search{
+  height: var(--header-with-search-height) ;
 
 }
 
 .header__logo{
+  width: 200px;
 
 }
 .header__logo-img{
+  width: 150px;
+  color: #fff;
 
 }
 .header__search{
