@@ -35,18 +35,7 @@
   align-items: center;
 }
 
-.nav__open-qr:hover .qr-code-download {
-  display: block;
-}
-.qr-code-download::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 30px;
-  left: 0;
-  top: -25px;
-}
+
 
 .nav__list-item {
   position: relative;
@@ -87,6 +76,7 @@
 /* Header QR code */
 .qr-code-download {
   display: none;
+  z-index: 3;
   background-color: var(--white-color);
   width: 186px;
   position: absolute;
@@ -94,6 +84,7 @@
   top: 125%;
   border-radius: 2px;
   animation: fadeIn ease-in 0.4;
+  
 }
 
 .qr-img {
@@ -115,6 +106,18 @@
 
 .qr-download-link:nth-child(2) {
   margin-right: 11px;
+}
+.nav__open-qr:hover .qr-code-download {
+  display: block;
+}
+.qr-code-download::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30px;
+  left: 0;
+  top: -25px;
 }
 
 /* Phần Thông báo header */
