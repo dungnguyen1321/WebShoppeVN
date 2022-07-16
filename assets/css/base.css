@@ -33,6 +33,22 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+  
+}
+
+.grid__column-2 {
+
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 16.66667%;
+}
+
+.grid__column-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 83.33333%;
 }
 
 /* Animation */
@@ -97,9 +113,10 @@ html {
   padding: 0 12px;
   outline: none;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--white-color);
 }
 .btn.btn-normal:hover {
   background-color: rgba(0, 0, 0, 0.5);
