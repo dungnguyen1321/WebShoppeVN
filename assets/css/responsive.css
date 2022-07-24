@@ -127,6 +127,6 @@
     padding: 12px 16px;
   }
   .footer__heading {
-    /* text-align: center; */
+    min-height: 32px;
   }
 }
